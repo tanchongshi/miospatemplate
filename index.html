@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" data-framework="marionettejs">
+	<head>
+		<meta charset="utf-8">
+		<title> 约个球</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <link rel="stylesheet" href="css/basic.css">
+        <link rel="stylesheet" href="css/common.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+        <script type="text/javascript">
+            var docEle = document.documentElement;docEle.style.fontSize = parseInt(docEle.getBoundingClientRect().width) / 16 + 'px';       
+        </script>
+	</head>
+
+    <body>
+        <div class="container">
+            <header class="header"><h1 class="m-logo-text"><a id="chevronLeftId" href="javascript:void(0);"><i class="fa fa-fw"></i>约个球啊</a> </h1></header>
+            <section id="main" class="main"></section>
+            <footer id="footer" class="footer"></footer>
+        </div>
+        <div id="notification" style = "position: fixed; top:0; z-index:999;"></div>
+
+        <script data-main="js/main" src="bower_components/requirejs/require.js"></script>
+    </body>
+
+</html>

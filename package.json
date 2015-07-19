@@ -1,0 +1,16 @@
+{
+  "name": "gruntlive",
+  "version": "1.0.0",
+  "description": "des",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "author": "mesut",
+  "license": "MIT",
+  "devDependencies": {
+    "connect-livereload": "^0.5.3",
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}

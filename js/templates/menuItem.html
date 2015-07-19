@@ -1,0 +1,35 @@
+
+
+<% if(name == 'me') { %>
+<div class="u-me-toggle-cls" id="u-me-toggle-id">
+	<a href="#pageChild/group" class="item-1">
+		<div class="u-icon">
+			<i class="fa fa-group fa-fw"></i>
+		</div>
+		<div>我的圈子</div>
+	</a>
+	<a href="#pageChild/activity" class="item-2">
+		<div class="u-icon">
+			<i class="fa fa-list fa-fw"></i>
+		</div>
+		<div>我的活动</div>
+	</a>
+</div>
+<a href="javascript:void(0);" id="u-me-id">
+	<div class="u-icon">
+		<i class="fa fa-<%= cls %> fa-fw"></i>
+	</div>
+	<div>
+		<%= title %>
+	</div>
+</a>	
+<% } else { %>
+<a href="#page/<%= name %>">
+	<div class="u-icon">
+		<i class="fa fa-<%= cls %> fa-fw"></i>
+	</div>
+	<div>
+		<%= title %>
+	</div>
+</a>	
+<% } %>
